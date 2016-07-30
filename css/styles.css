@@ -3,6 +3,7 @@ body {
 	color: #89776B;
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	padding-top: 50px;
+	position: relative;
 }
 
 footer {
