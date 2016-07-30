@@ -1,7 +1,10 @@
 body {
+	background-color: #FFFEF4;
+	color: #89776B;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	padding-top: 50px;
 	position: relative;
-	$('body').scrollspy({ target: '#navbar-example' })
+	$('body').scrollspy( target: '#navbar-example' )
 }
 
 footer {
@@ -9,48 +12,51 @@ footer {
 	bottom: 0;
     height: 50px;
     width: 100%;
-    background-color: #f8f8f8;
-    color: #7e7e7e;
+    background-color: #ABD6E8;
     padding: 15px;	
 }
 
 .first {
 	border-style: solid;
-	border-color: #f8f8f8;
+	border-color: #ABD6E8;
 	height: 320px;
 }
 
 .second {
 	border-style: solid;
-	border-color: #f8f8f8;
+	border-color: #ABD6E8;
 	height: 160px;
 }
 
 .boxyb {
 	border-style: solid;
-	border-color: #f8f8f8;
+	border-color: #ABD6E8;
 	height: 620px;
 }
 
-#boxyb a {
+.links a {
+	text-decoration: none;
+}
+
+#boxyc a {
 	text-decoration: none;
 	transition: color 2s ease-out;
 }
 
-#boxyb ul {
+#boxyc ul {
 	list-style-type: none;
 }
 
-#boxyb a:link {
-	color: #000033;
+#boxyc a:link {
+	color: #0e0ec2;
 }
 
-#boxyb a:visited {
-	color: #344873;
+#boxyc a:visited {
+	color: #ABD6E8;
 }
 
-#boxyb a:hover {
-	color: #000;
+#boxyc a:hover {
+	color: #A4D6CC;
 }	
 
 #iphoto {
@@ -106,3 +112,34 @@ figure {
 	opacity: 1;
 }
 
+@media only screen and (max-width: 37.5em) {
+	.boxyb {
+		height: 330px;
+	}
+	
+		#boxyc {
+		height: 700px;
+	}
+
+	figure {
+		position: absolute;
+		left: 60px;
+		top: 200px;
+		opacity: .25;
+		text-align: center;
+	}
+
+	#gallery a:hover span {
+		position: absolute;
+		left: 60px;
+		top: 200px;
+		opacity: 1;
+	}
+
+	.education, .second {
+		height: 250px;
+	}
+	.last {
+		height: 150px;
+	}
+}
